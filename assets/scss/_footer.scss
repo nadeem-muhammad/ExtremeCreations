@@ -1,0 +1,77 @@
+.footer_area{
+    background: #f4f4f4;
+    padding: 50px 0;
+    & .col-lg-4{
+        @media #{$tablet-device}{
+           flex: 0 0 50%;
+            max-width: 50%;
+        }
+        @media #{$large-mobile}{
+           flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    & .single_footer{
+        @media #{$tablet-device}{
+           margin-bottom: 10px;
+        }
+        @media #{$large-mobile}{
+           margin-bottom: 15px;
+        }
+        & h3{
+            color: #1a1b35;
+            font-size: 28px;
+            font-weight: 700;
+            position: relative;
+            text-transform: capitalize;
+            line-height: 32px;
+            display: inline-block;
+            margin-bottom: 40px;
+            @media #{$tablet-device}{
+               font-size: 24px;
+                margin-bottom: 20px;
+            }
+            @media #{$large-mobile}{
+               font-size: 22px;
+                margin-bottom: 20px;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 2px;
+                background: #bf9a5c;
+                bottom: -10px;
+                left: 8%;
+            }
+        }
+        & ul{
+            & li{
+                color: #000;
+                font-size: 14px;
+                line-height: 39px;
+                @media #{$large-mobile}{
+                    line-height: 35px;
+                }
+                & a{
+                    &:hover{
+                        color: #bf9a5c;
+                    }
+                   font-size: 14px;
+                    line-height: 39px;
+                    color: #000;
+                    text-decoration: none;
+                    @media #{$large-mobile}{
+                       line-height: 35px;
+                    }
+                }
+            }
+        }
+        & .footer_column_2{
+            display: flex;
+            & .footer_column_list{
+               margin-right: 50px;
+            }
+        }
+    }
+}

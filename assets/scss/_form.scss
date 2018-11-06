@@ -1,0 +1,149 @@
+.form_area{
+    padding-bottom: 37px;
+    & .col-lg-6{
+        @media #{$large-mobile}{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+   
+    
+    & .section_title{
+         text-align: center;
+        margin-bottom: 30px;
+        & h2{
+            color: #1a1b35;
+            font-size: 28px;
+            font-weight: 700;
+            position: relative;
+            text-transform: capitalize;
+            line-height: 33px;
+            display: inline-block;
+            @media #{$large-mobile}{
+               font-size: 22px;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 2px;
+                background: #bf9a5c;
+                bottom: -10px;
+                left: 22%;
+                @media #{$large-mobile}{
+                   left: 20%;
+                }
+            }
+        }
+    }
+    & .form_inner{
+        & p{
+            margin-top: 0;
+            margin-bottom: 20px;
+            & label{
+              text-transform: capitalize;
+                font-family: $Playfair;
+                font-size: 25px;
+                color: #000;
+                margin-bottom: 25px;
+                font-weight: bold;
+                margin-top: 15px;
+                display: inline-block;
+                @media #{$large-mobile}{
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+            & input{
+                &::-moz-placeholder{
+                    color: #000;
+                    opacity: 1;
+                    text-transform: capitalize;
+                }
+                &::-webkit-input-placeholder{
+                    color: #000;
+                    opacity: 1;
+                    text-transform: capitalize;
+                }
+                height: 40px;
+                background: inherit;
+                border: 0;
+                border-bottom: 1px solid #000;
+                padding: 0 20px 0 0;
+                font-weight: 500;
+                color: #000
+            }
+            
+            & textarea{
+                &::-moz-placeholder{
+                    color: #000;
+                    opacity: 1;
+                    text-transform: capitalize;
+                }
+                &::-webkit-input-placeholder{
+                    color: #000;
+                    opacity: 1;
+                    text-transform: capitalize;
+                }
+                background: inherit;
+                border: 2px solid #000;
+                height: 190px;
+                margin-top: 38px;
+                font-weight: 500;
+                resize: none;
+                @media #{$large-mobile}{
+                    height: 120px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        & .form_submit-Btn{
+            text-align: center;
+            & button{
+                &:hover{
+                    background: #bf9a5c;
+                }
+                font-size: 16px;
+                @include transition(.3s);
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 500;
+                padding: 12px 41px;
+                background: #002847;
+                display: inline-block;
+                text-decoration: none;
+                border: 0;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

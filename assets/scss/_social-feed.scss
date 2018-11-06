@@ -1,0 +1,109 @@
+.social_feed{
+    margin-bottom: 60px;
+    & .section_title{
+        text-align: center;
+        margin-bottom: 50px;
+        & h2{
+            color: #1a1b35;
+            font-size: 28px;
+            font-weight: 700;
+            position: relative;
+            text-transform: capitalize;
+            line-height: 33px;
+            display: inline-block;
+            margin-bottom: 0;
+            @media #{$large-mobile}{
+               font-size: 22px;
+            }
+            
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100px;
+                height: 2px;
+                background: #bf9a5c;
+                bottom: -10px;
+                left: 16%;
+                @media #{$large-mobile}{
+                   left: 8%;
+                }
+            }
+        }
+    }
+    & .social_gallery{
+        & .social_items{
+            & .col-lg-3{
+                @media #{$desktop-device}{
+                   flex: 0 0 33.33%;
+                    max-width: 33.33%;
+                }
+                @media #{$tablet-device}{
+                   flex: 0 0 33.33%;
+                    max-width: 33.33%;
+                }
+                @media #{$large-mobile}{
+                   flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                @media #{$small-mobile}{
+                   flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                
+            }
+            & .single_social{
+                & .social_thumb{
+                    position: relative;
+                    overflow: hidden;
+                    & .social_desc{
+                         background: #f3f3f3;
+                        padding: 15px;
+                        position: absolute;
+                        bottom: -91px;
+                        opacity: 0;
+                        visibility: hidden;
+                         @include transition(.3s); 
+
+                        & p{
+                            margin-top: 0;
+                        }
+                    }
+                }
+                & .social_content{
+                    background: #f3f3f3;
+                    padding: 15px;
+
+                    & .social_icone{
+                        display: flex;
+                        align-items: center;
+                        & i{
+                          font-size: 22px;
+                            color: #000;
+                        }
+                        & p{
+                            margin-top: 0;
+                            margin-left: 20px;
+                            font-weight: 500;
+                            & a{
+                                &:hover{
+                                    color: #bf9a5c;
+                                }
+                                color: #000;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    & .social_desc{
+                    opacity: 1;
+                    visibility: visible;
+                     bottom: 0;   
+                }
+            }
+            }
+        }
+    }
+    
+    
+}
